@@ -1,79 +1,269 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 50px;
+}
 
-.image-container1 {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0;
-    /* padding: 0px; */
-    /* height: 682.66px; */
-  }
+.service-container {
+  height: 50px;
+  display: flex
+}
+
+#services {
+  cursor: pointer;
+  padding: 16px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.socials-container {
+  display: flex; padding-right: 60px
+}
+
+.whatsapp-logo {
+  cursor: pointer;
+  width: 30;
+  height: 30px;
+  padding: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10px;
+}
+
+.facebook-logo {
+  cursor: pointer;
+  width: 26;
+  height: 26px;
+  padding: 5px;
+  padding-right: 0px;
+  padding-top: 12px;
+}
+
+.headline {
+  margin-left: 43px; 
+  padding-bottom: 15px
+}
+
+.property {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.property img {
+  width: 100%;
+  height: auto;
+}
+
+.moto-1 {
+justify-content: space-evenly;
+width: 26%;
+height: 100px;
+font-size: large;
+padding-right: 125px;
+}
+
+.moto-2 {
+justify-content: space-evenly;
+width: 26%;
+height: 100px;
+font-size: large;
+}
+
+.moto-3 {
+justify-content: space-evenly;
+width: 26%;
+height: 100px;
+font-size: large;
+padding-left: 125px;
+}
+
+.moto-bg {
+display: flex;
+background-color: gray;
+justify-content: center;
+padding-top: 70px;
+padding-bottom: 50px;
+}
+
+.moto-container {
+margin-bottom: 0;
+width: 100%;
+text-align: center;
+padding-bottom: 15px;
+}
+
+.overlay-button {
+  position: absolute;
+  top: 84%;
+  left: 19%;
+  transform: translate(-50%, -50%);
+  padding: 16px 171px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 1.2em;
+  color: white;
+  width: 30%;
+  height: 50px;
+  background: linear-gradient(to left, #808080, #000000);
+}
+
+.amentities {
   
-  .image-container1 img {
-    width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.amentity-images {
+  width: 31%;
+  text-align: center;
+}
+
+.amentity-images img {
+  width: 100%;
+  height: auto;
+  padding-left: 10px;
+}
+
+.amentity-images h3 {
+  margin-top: 20px;
+}
+
+.amentity-images p {
+  margin-top: 10px;
+}
+
+.amentity-images button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.test{
+  text-align:left;
+  
+}
+.test1{
+  text-align:right;
+  
+}
+body {
+  margin: 0;
+}
+
+@media only screen and (max-width: 480px) {
+
+
+  .navbar {
+    flex-direction: row;
+    align-items: flex-start;
     height: auto;
-    /* padding: 0px; */
-    /* height: 682.66px; */
+    padding: 5px;
+    width: auto;
   }
-  
-  .overlay-button {
-    position: absolute;
-    top: 84%;
-    left: 19%;
-    transform: translate(-50%, -50%);
-    padding: 16px 171px;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    white-space: nowrap;
-    font-size: 1.2em;
-    color: white;
-    width: 30%;
-    height: 50px;
-    background: linear-gradient(to left, #808080, #000000);
-  }
-  
-  .container {
-    
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    padding-left: 10px;
-  }
-  
-  .image-container {
-    width: 31%;
-    text-align: center;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height: auto;
-    padding-left: 10px;
-  }
-  
-  .image-container h3 {
-    margin-top: 20px;
-  }
-  
-  .image-container p {
+
+  .socials-container {
     margin-top: 10px;
   }
-  
-  .image-container button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+
+  .service-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
   }
-  .test{
-    text-align:left;
-    
+
+  #services {
+    padding: 3px;
+    text-align: center;
   }
-  .test1{
-    text-align:right;
-    
+
+  .property .overlay-button {
+    padding: 12px 100px;
+    font-size: 1em;
   }
+
+  .amentities {
+    flex-direction: column;
+  }
+
+  .amentity-images {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .amentity-images img {
+    width: 100%;
+  }
+
+  .test, .test1 {
+    text-align: center;
+  }
+
+  .moto-1, .moto-2, .moto-3 {
+    width: 100%;
+    font-size: small;
+    padding: 0 5px;
+  }
+
+  .moto-bg {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    height: 60px;
+    padding: 3px;
+  }
+
+  .service-container {
+    display: flex;
+    padding: 2px;
+  }
+
+  .socials-container {
+    display: flex;
+    padding: 2px;
+  }
+
+  .property .overlay-button {
+    padding: 12px 100px;
+    font-size: 1em;
+  }
+
+  .amentities {
+    flex-direction: column;
+  }
+
+  .amentity-images {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .amentity-images img {
+    width: 100%;
+  }
+
+  .test, .test1 {
+    text-align: center;
+  }
+
+  .moto-1, .moto-2, .moto-3 {
+    width: 45%;
+    font-size: medium;
+    padding: 0 5px;
+  }
+}
