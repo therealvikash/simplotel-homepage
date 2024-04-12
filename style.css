@@ -2,11 +2,18 @@
 .image-container1 {
     position: relative;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    /* padding: 0px; */
+    /* height: 682.66px; */
   }
   
   .image-container1 img {
     width: 100%;
     height: auto;
+    /* padding: 0px; */
+    /* height: 682.66px; */
   }
   
   .overlay-button {
@@ -19,14 +26,14 @@
     border: none;
     cursor: pointer;
     font-weight: bold;
+    white-space: nowrap;
     font-size: 1.2em;
-   color: white;
-   width: 30%;
-
+    color: white;
+    width: 30%;
+    height: 50px;
+    background: linear-gradient(to left, #808080, #000000);
   }
-  .gradient-background {
-    background: linear-gradient(to left, #585655, #0f0e0e);
-  }
+  
   .container {
     
     display: flex;
